@@ -1,0 +1,33 @@
+{
+  "orden_evaluacion": ["NORMAL", "CONGESTION", "ALTA_DENSIDAD"],
+  "por_defecto": {
+    "nombre": "MODERADO",
+    "descripcion": "resto de casos -> Verde 30s",
+    "semaforo": "VERDE",
+    "duracion_seg": 30
+  },
+  "reglas": {
+    "NORMAL": {
+      "descripcion": "Q < 5 AND Vp > 35 AND D < 20 -> Verde 15s",
+      "volumen_max": 4,
+      "velocidad_min": 36,
+      "vehiculos_max": 19,
+      "semaforo": "VERDE",
+      "duracion_seg": 15
+    },
+    "CONGESTION": {
+      "descripcion": "Q > 10 OR Vp < 20 -> Rojo 45s",
+      "volumen_min": 11,
+      "velocidad_max": 19,
+      "logica": "OR",
+      "semaforo": "ROJO",
+      "duracion_seg": 45
+    },
+    "ALTA_DENSIDAD": {
+      "descripcion": "D > 30 -> Verde extendido 60s",
+      "vehiculos_min": 31,
+      "semaforo": "VERDE",
+      "duracion_seg": 60
+    }
+  }
+}

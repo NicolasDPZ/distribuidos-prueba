@@ -1,0 +1,8 @@
+{
+  "filas": ["A", "B", "C", "D", "E"],
+  "columna_inicio": 1,
+  "num_columnas": 5,
+  "formato_interseccion": "INT_{fila}{columna}",
+  "intervalo_camara_gps_seg": 5,
+  "intervalo_espiras_seg": 30
+}

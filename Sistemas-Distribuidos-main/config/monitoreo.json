@@ -1,0 +1,6 @@
+{
+  "titulo": "Monitoreo de trafico (PC2)",
+  "limite_filas": 30,
+  "conexion_analitica": "localhost",
+  "nota_bd": "Historial desde PostgreSQL replica en esta misma PC"
+}

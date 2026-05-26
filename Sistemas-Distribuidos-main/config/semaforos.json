@@ -1,0 +1,8 @@
+{
+  "estado_inicial": "ROJO",
+  "duracion_inicial_seg": 15,
+  "eje_carrera": "CARRERA",
+  "eje_calle": "CALLE",
+  "nota": "intersecciones vacias = se generan desde config/ciudad.json (matriz dinamica)",
+  "intersecciones": []
+}

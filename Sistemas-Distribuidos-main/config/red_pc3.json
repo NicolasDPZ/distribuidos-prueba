@@ -1,0 +1,9 @@
+{
+  "pc2_ip": "10.43.100.176",
+  "puerto_push_bd": 5558,
+  "puerto_rep_monitoreo": 5560,
+  "puerto_heartbeat": 5561,
+  "sync_intervalo_seg": 30,
+  "nodo_checkpoint_pc3": "pc3_principal",
+  "pg_conninfo": "host=localhost port=5432 dbname=traffic_main user=traffic password=traffic connect_timeout=5"
+}

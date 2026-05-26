@@ -1,0 +1,16 @@
+{
+  "pc1_ip": "10.43.100.43",
+  "pc2_ip": "10.43.100.176",
+  "pc3_ip": "10.43.99.111",
+  "puerto_sensores_pub": 5555,
+  "puerto_broker_pub": 5556,
+  "puerto_push_bd": 5558,
+  "puerto_pull_replica": 5559,
+  "puerto_push_semaforo": 5557,
+  "puerto_rep_monitoreo": 5560,
+  "puerto_heartbeat": 5561,
+  "failover_timeout_seg": 12,
+  "sync_intervalo_seg": 30,
+  "nodo_checkpoint_pc3": "pc3_principal",
+  "pg_conninfo": "host=localhost port=5432 dbname=traffic_replica user=traffic password=traffic connect_timeout=5"
+}
