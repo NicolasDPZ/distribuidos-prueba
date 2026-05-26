@@ -83,21 +83,11 @@ pc3/
 sql/
 ```
 
-## Compilar (raiz del repo)
+## Compilar con makefile (raiz del repo)
 
-```bash
-COMMON="common/config.cpp common/config_loader.cpp common/json_utils.cpp"
-PG="common/pg_log.cpp"
+make all, para generar todos los ejecutables en una carpeta bin
 
-g++ -std=c++17 pc2/dbReplica.cpp $COMMON $PG -o dbReplica -lzmq -lpq -I.
-g++ -std=c++17 pc2/semaforos.cpp pc2/semaforo_interseccion.cpp $COMMON -o semaforos -lzmq -I.
-g++ -std=c++17 pc2/reglas_trafico.cpp pc2/semaforo_interseccion.cpp pc2/failover_pc3.cpp pc2/estado_ciudad.cpp pc2/ordenes_manual.cpp pc2/monitoreo_rep.cpp pc2/analisis.cpp $COMMON $PG -o analisis -lzmq -lpq -I.
-g++ -std=c++17 pc2/monitoreo.cpp common/pg_consultas.cpp $COMMON $PG -o monitoreo -lzmq -lpq -I.
-g++ -std=c++17 pc1/sensores.cpp/sensorCamara.cpp $COMMON -o camara -lzmq -I.
-g++ -std=c++17 pc1/sensores.cpp/SensorGps.cpp $COMMON -o gps -lzmq -I.
-g++ -std=c++17 pc1/sensores.cpp/EspirasInductivas.cpp $COMMON -o espiras -lzmq -I.
-g++ -std=c++17 pc3/database.cpp pc3/db_sync.cpp $COMMON $PG -o database -lzmq -lpq -I.
-```
+ejecutar con ./bin/*nombre del ejecutable*
 
 ## Orden de ejecucion
 
