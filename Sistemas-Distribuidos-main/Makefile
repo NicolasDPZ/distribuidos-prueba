@@ -50,7 +50,7 @@ $(BIN)/SensorGps: $(PC1)/sensores.cpp/SensorGps.cpp $(COMMON_SRC) | $(BIN)
 
 .PHONY: pc1
 pc1: $(PC1_TARGETS)
-	@echo "✔  PC1 compilado: broker, sensorCamara, EspirasInductivas, SensorGps"
+	@echo "  PC1 compilado: broker, sensorCamara, EspirasInductivas, SensorGps"
 
 # ============================================================
 #  PC2 — Analisis, Semaforos, Monitoreo, DbReplica
@@ -81,7 +81,7 @@ $(BIN)/dbReplica: $(PC2)/dbReplica.cpp $(COMMON_SRC) | $(BIN)
 
 .PHONY: pc2
 pc2: $(PC2_TARGETS)
-	@echo "✔  PC2 compilado: analisis, semaforos, monitoreo, dbReplica"
+	@echo "  PC2 compilado: analisis, semaforos, monitoreo, dbReplica"
 
 # ============================================================
 #  PC3 — Database
@@ -93,14 +93,14 @@ $(BIN)/database: $(PC3)/database.cpp $(PC3)/db_sync.cpp $(COMMON_SRC) | $(BIN)
 
 .PHONY: pc3
 pc3: $(PC3_TARGETS)
-	@echo "✔  PC3 compilado: database"
+	@echo "  PC3 compilado: database"
 
 # ============================================================
 #  Targets generales
 # ============================================================
 .PHONY: all
 all: pc1 pc2 pc3
-	@echo "✔  Todo compilado correctamente"
+	@echo "  Todo compilado correctamente"
 
 $(BIN):
 	mkdir -p $(BIN)
@@ -108,4 +108,4 @@ $(BIN):
 .PHONY: clean
 clean:
 	rm -rf $(BIN)
-	@echo "✔  Binarios eliminados"
+	@echo "  Binarios eliminados"
