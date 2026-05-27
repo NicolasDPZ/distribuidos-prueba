@@ -1,5 +1,0 @@
-pyzmq
-pandas
-matplotlib
-psutil
-numpy
